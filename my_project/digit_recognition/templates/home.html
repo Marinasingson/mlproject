@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Digit Recognizer</title>
+    <link rel="stylesheet" href="my_project\digit_recognition\static\style.css">
+</head>
+<body>
+    <h1>Digit Recognizer</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Recognize Digit</button>
+    </form>
+    <script src="my_project\digit_recognition\static\script.js"></script>
+
+</body>
+</html>
